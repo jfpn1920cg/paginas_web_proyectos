@@ -1,0 +1,59 @@
+body{
+    font-family: Arial;
+    background: rgb(78, 78, 78);
+}
+/*estilizando_menu_de_navegacion*/
+.contenedor_1{
+    width: 1350px;
+    height: 53px;
+    background: rgb(173, 173, 173);
+}
+.dadis_logo{
+    margin: 5px 0px 0px 5px;
+    max-width: 55px;
+}
+.menu_de_menu_desplegable {
+    width: 40px;
+    cursor: pointer;
+    display: inline-block;
+}
+.menu_de_navegacion_desplegable span {
+    width: 25px;
+    height: 4px;
+    margin: 6px 0px;
+    margin-top: -19px;
+    margin-left: 1320px;
+    display: block;
+    transition: all 0.3s ease;
+    background-color: rgb(0, 0, 0);
+}
+.menu_de_navegacion {
+    margin-top: -10px;
+    margin-left: 1150px;
+    width: 200px;
+    display: none;
+    background: rgb(173, 173, 173);
+}
+.menu_de_navegacion ul {
+    margin-left: 5px;
+    padding: 0;
+    list-style-type: none;
+}
+.menu_de_navegacion ul li {
+    margin: 10px 0;
+}
+.menu_de_navegacion ul li a {
+    font-size: 18px;
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+.menu_de_navegacion.active {
+    display: block;
+}
+/*estilizando_caja_de_opciones*/
+.opciones{
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 100px;
+    color: black;
+}
