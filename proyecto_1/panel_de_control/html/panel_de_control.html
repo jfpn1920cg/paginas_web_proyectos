@@ -8,33 +8,55 @@
     <script src="/panel_de_control/js/panel_de_control.js"></script>
 </head>
 <body>
-    <!--estructurando_menu_de_navegacion-->
-    <div class="contenedor_1">
-        <img src="/panel_de_control/img/dadis_logo.png" alt="Logo" class="dadis_logo">
-        <div class="menu_de_navegacion_desplegable" id="menu_de_navegacion_desplegable">
-            <span></span>
-            <span></span>
-            <span></span>
+        <!-- Checkbox para controlar la visibilidad del menú -->
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <!-- Etiqueta del ícono de hamburguesa -->
+        <label for="menu-toggle" class="hamburguesa">
+            &#9776; <!-- Símbolo de la hamburguesa -->
+        </label>
+        <!-- Contenedor del menú de navegación -->
+        <aside class="menu-izquierdo">
+            <div class="imagen-texto">
+                <img src="/panel_de_control/img/dadis_logo.png" alt="Imagen" class="imagen-lateral">
+                <span class="texto-lateral">dadis</span>
+            </div>
+            <nav class="opciones-menu">
+                <ul>
+                    <li><a href="#opcion1">carrusel</a></li>
+                    <li><a href="#opcion2">aliados</a></li>
+                    <li><a href="#opcion3">productos</a></li>
+                    <li><a href="#opcion4">propagandas</a></li>
+                    <li><a href="#opcion5">destacados</a></li>
+                    <li><a href="#opcion6">reproduccion</a></li>
+                    <li><a href="#opcion7">pie de pagina</a></li>
+                    <li><a href="#opcion8">chatbot</a></li>
+                    <li><a href="#opcion9">repores</a></li>
+                    <li><a href="#opcion10">configuracion</a></li>
+                </ul>
+            </nav>
+        </aside>
+    
+        <!-- Slider de imágenes -->
+        <div class="slider">
+            <div class="slides">
+                <div class="slide"><img src="/panel_de_control/img/descarga (1).jpeg" alt="Imagen 1"></div>
+                <div class="slide"><img src="/panel_de_control/img/descarga (2).jpeg" alt="Imagen 2"></div>
+                <div class="slide"><img src="/panel_de_control/img/descarga.jpeg" alt="Imagen 3"></div>
+            </div>
+            <a class="prev" onclick="prevSlide()">&#10094;</a>
+            <a class="next" onclick="nextSlide()">&#10095;</a>
+            <div class="dots">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
         </div>
-    </div>
-    <nav class="menu_de_navegacion" id="menu_de_navegacion">
-        <ul>
-            <li><a href="#">inicio</a></li>
-            <li><a href="#">nosotros</a></li>
-            <li><a href="#">contactanos</a></li>
-        </ul>
-    </nav>
-    <!--estructurando_caja_de_opciones-->
-    <div class="contenedor_2">
-        <ul class="caja_de_opciones">
-            <li><a href="" class="opciones">carrusel</a></li>
-            <li><a href="" class="opciones">categorias</a></li>
-            <li><a href="" class="opciones">eventos</a></li>
-            <li><a href="" class="opciones">chatbot</a></li>
-            <li><a href="" class="opciones">calendario</a></li>
-            <li><a href="" class="opciones">basura</a></li>
-            <li><a href="" class="opciones">configuracion</a></li>
-        </ul>
-    </div>
+
+        <!-- Zona de Categorías -->
+        <section class="categorias">
+            <img src="/panel_de_control/img/descarga (2).jpeg" alt="Categoría" class="imagen-categoria">
+            <h2 class="titulo-categoria">Editar</h2>
+            <button class="btn-edicion">Edición</button>
+        </section>
 </body>
 </html>
