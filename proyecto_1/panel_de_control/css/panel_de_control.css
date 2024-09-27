@@ -1,233 +1,42 @@
-/* Estilos básicos del cuerpo y el fondo */
-body {
-    font-family: 'Arial', sans-serif;
-    background-color: #929292;
-    margin: 0;
-    padding: 0; /* Asegúrate de que no haya relleno predeterminado */
-}
-
-/* Ocultar el checkbox */
-.menu-toggle {
-    display: none;
-}
-
-/* Estilos del ícono de hamburguesa */
-.hamburguesa {
-    font-size: 30px;
-    cursor: pointer;
-    color: white;
-    background-color: #444;
-    padding: 10px;
-    border-radius: 5px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2); /* Sombra del ícono */
-    transition: background-color 0.3s, transform 0.3s; /* Animaciones suaves */
-    position: fixed;
-    top: 15px;
-    left: 15px;
-    z-index: 1000; /* Asegura que el ícono esté sobre el menú */
-}
-
-/* Cambiar color y tamaño del ícono al hacer hover */
-.hamburguesa:hover {
-    background-color: #555;
-    transform: scale(1.1);
-}
-
-/* Estilos del menú de navegación */
-.menu-izquierdo {
-    width: 250px;
-    background-color: #333;
-    color: white;
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    left: -250px; /* Inicialmente oculto a la izquierda */
-    height: 100%;
-    overflow-y: auto;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra del menú */
-    transition: left 0.3s ease; /* Animación suave */
-    z-index: 999; /* Asegura que el menú esté debajo del ícono de hamburguesa */
-}
-
-/* Mostrar el menú cuando el checkbox está marcado */
-.menu-toggle:checked + .hamburguesa + .menu-izquierdo {
-    left: 0; /* Despliega el menú */
-}
-
-/* Imagen y texto en el menú */
-.imagen-texto {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    position: relative;
-    padding-left: 60px; /* Ajusta el padding para que no se superponga con el ícono */
-}
-
-/* Ajustar la imagen y el texto para evitar que la hamburguesa lo tape */
-.imagen-lateral {
-    width: 60px; /* Tamaño más grande para una mejor visibilidad */
-    height: 60px;
-    border-radius: 50%;
-    margin-right: 15px;
-    object-fit: cover; /* Asegura que la imagen se ajuste bien */
-}
-
-/* Ajustar el texto para alinearlo mejor */
-.texto-lateral {
-    font-size: 24px;
+body{
+    font-family: Arial;
     font-weight: bold;
-    color: white;
-    margin-bottom: 10px;
+    background: rgb(121, 121, 121);
 }
-
-/* Opciones del menú */
-.opciones-menu ul {
-    list-style: none;
-    padding: 0;
+.contenedor_1{
+    width: 1351px;
+    height: 88px;
+    border-radius: 5px 5px 0px 0px;
+    background: rgb(139, 33, 33);
 }
-
-.opciones-menu ul li {
-    margin-bottom: 15px;
-}
-
-.opciones-menu ul li a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    display: block;
-    padding: 10px;
-    background-color: #444;
-    border-radius: 5px;
-    transition: background-color 0.3s, transform 0.3s; /* Animaciones suaves */
-}
-
-/* Cambiar color y tamaño del enlace al hacer hover */
-.opciones-menu ul li a:hover {
-    background-color: #555;
-    transform: scale(1.05);
-}
-
-/* Estilos básicos del slider */
-.slider {
-    position: relative;
-    width: 96%;
-    max-width: 1366px;
-    height: 352px;
-    margin: 60px auto;
+.dadis_logo{
     margin-top: 5px;
-    margin-left: 45px;
-    margin-right: 0;
-    overflow: hidden;
-    border: 2px solid #ddd;
-    border-radius: 10px;
+    margin-left: 5px;
+    border-radius: 5px 5px 0px 0px;
+    width: 100px;
 }
-
-/* Contenedor de las imágenes */
-.slides {
+.titulo_1{
+    margin-top: -57px;
+    margin-left: 110px;
+}
+.contenedor_menu_de_navegacion{
     display: flex;
-    transition: transform 0.5s ease;
+    justify-content: center;  
+    align-items: center;      
+    margin-top: 100px;
+    width: 200px;
+    height: 50px;
+    border-radius: 0px 0px 5px 5px;
+    background: rgb(139, 33, 33);                   
 }
-
-/* Cada diapositiva ocupa el tamaño completo del slider */
-.slide {
-    min-width: 100%;
-    box-sizing: border-box;
+.menu_de_navegacion{
+    margin-top: 15px;
+    display: block;
 }
-
-/* Ajustar la imagen para que se ajuste al contenedor */
-.slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+.seleccionar_opcion{
+    text-decoration: none;
+    color: black;
 }
-
-/* Controles del slider */
-.prev, .next {
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    width: auto;
-    padding: 16px;
-    margin-top: -22px;
-    color: white;
-    font-weight: bold;
-    font-size: 18px;
-    border-radius: 0 3px 3px 0;
-    user-select: none;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s;
-}
-
-.next {
-    right: 0;
-    border-radius: 3px 0 0 3px;
-}
-
-.prev:hover, .next:hover {
-    background-color: rgba(0, 0, 0, 0.8);
-}
-
-/* Indicadores del slider */
-.dots {
-    text-align: center;
-    padding: 10px;
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-}
-
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: background-color 0.3s;
-}
-
-.dot.active {
-    background-color: #717171;
-}
-
-/* Estilos de la zona de categorías */
-.categorias {
-    text-align: center;
-    margin: 20px auto;
-    padding: 10px;
-    max-width: 800px;
-    margin-top: -65px; /* Ajusta el margen superior para mover la sección más cerca del slider */
-    margin-left: -21px; /* Ajusta el margen izquierdo para mover la sección hacia la izquierda */
-    margin-right: 30px; /* Ajusta el margen derecho si es necesario para centrar o alinear */
-}
-
-.imagen-categoria {
-    width: 80%;
-    max-width: 300px;
-    height: auto;
-    border-radius: 8px;
-    margin-bottom: 10px;
-}
-
-.titulo-categoria {
-    font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.btn-edicion {
-    background-color: #444;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    padding: 8px 16px;
-    font-size: 14px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.btn-edicion:hover {
-    background-color: #555;
+.seleccionar_opcion:hover{
+    color: rgb(255, 255, 255);
 }

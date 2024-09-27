@@ -4,59 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>panel de control</title>
-    <link rel="stylesheet" href="/panel_de_control/css/panel_de_control.css">
-    <script src="/panel_de_control/js/panel_de_control.js"></script>
+    <link rel="stylesheet" href="/css/panel_de_control.css">
+    <script src="/js/panel_de_control.js"></script>
 </head>
 <body>
-        <!-- Checkbox para controlar la visibilidad del menú -->
-        <input type="checkbox" id="menu-toggle" class="menu-toggle">
-        <!-- Etiqueta del ícono de hamburguesa -->
-        <label for="menu-toggle" class="hamburguesa">
-            &#9776; <!-- Símbolo de la hamburguesa -->
-        </label>
-        <!-- Contenedor del menú de navegación -->
-        <aside class="menu-izquierdo">
-            <div class="imagen-texto">
-                <img src="/panel_de_control/img/dadis_logo.png" alt="Imagen" class="imagen-lateral">
-                <span class="texto-lateral">dadis</span>
-            </div>
-            <nav class="opciones-menu">
-                <ul>
-                    <li><a href="#opcion1">carrusel</a></li>
-                    <li><a href="#opcion2">aliados</a></li>
-                    <li><a href="#opcion3">productos</a></li>
-                    <li><a href="#opcion4">propagandas</a></li>
-                    <li><a href="#opcion5">destacados</a></li>
-                    <li><a href="#opcion6">reproduccion</a></li>
-                    <li><a href="#opcion7">pie de pagina</a></li>
-                    <li><a href="#opcion8">chatbot</a></li>
-                    <li><a href="#opcion9">repores</a></li>
-                    <li><a href="#opcion10">configuracion</a></li>
-                </ul>
-            </nav>
-        </aside>
-    
-        <!-- Slider de imágenes -->
-        <div class="slider">
-            <div class="slides">
-                <div class="slide"><img src="/panel_de_control/img/descarga (1).jpeg" alt="Imagen 1"></div>
-                <div class="slide"><img src="/panel_de_control/img/descarga (2).jpeg" alt="Imagen 2"></div>
-                <div class="slide"><img src="/panel_de_control/img/descarga.jpeg" alt="Imagen 3"></div>
-            </div>
-            <a class="prev" onclick="prevSlide()">&#10094;</a>
-            <a class="next" onclick="nextSlide()">&#10095;</a>
-            <div class="dots">
-                <span class="dot" onclick="currentSlide(1)"></span>
-                <span class="dot" onclick="currentSlide(2)"></span>
-                <span class="dot" onclick="currentSlide(3)"></span>
-            </div>
-        </div>
-
-        <!-- Zona de Categorías -->
-        <section class="categorias">
-            <img src="/panel_de_control/img/descarga (2).jpeg" alt="Categoría" class="imagen-categoria">
-            <h2 class="titulo-categoria">Editar</h2>
-            <button class="btn-edicion">Edición</button>
-        </section>
+    <div class="contenedor_1">
+        <img src="/img/dadis_logo.png" alt="" class="dadis_logo">
+        <p class="titulo_1">administrador</p>
+    </div>
+    <div class="contenedor_menu_de_navegacion">
+        <p class="menu_de_navegacion"><a href="menu_de_navegacion.html" class="seleccionar_opcion">menu de navegacion</a></p>
+    </div>
+        <!--<p><a href="carrusel.html" class="seleccionar_opcion">carrusel</a></p>
+        <p><a href="aliados.html" class="seleccionar_opcion">aliados</a></p>
+        <p><a href="noticias.html" class="seleccionar_opcion">noticias</a></p>
+        <p><a href="calendario.html" class="seleccionar_opcion">calendario</a></p>
+        <p><a href="sujerecia.html" class="seleccionar_opcion">sujerencia</a></p>
+        <p><a href="publicidad.html" class="seleccionar_opcion">publicidad</a></p>
+        <p><a href="contactos.html" class="seleccionar_opcion">contactos</a></p>
+        <p><a href="pie_de_pagina.html" class="seleccionar_opcion">pie de pagina</a></p>-->
+    </div>
 </body>
 </html>
