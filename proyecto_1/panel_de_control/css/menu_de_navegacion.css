@@ -145,3 +145,48 @@ body{
 .seleccionar_opcion:hover{
     color: rgb(255, 255, 255);
 }
+/*estilizando_menu_de_navegacion_editor*/
+.contenedor_titulo_2{
+    display: flex;      
+    margin-top: -490px;
+    margin-left: 205px;
+    width: 430px;
+    height: 345px;
+    border-radius: 0px 0px 5px 0px;
+    background: rgb(139, 33, 33);                   
+}
+.titulo_2{
+    margin-top: 15px;
+    margin-left: 110px;
+    display: block;
+}
+.contenedor_titulo{
+    margin-left: 205px;
+    width: 500px;
+}
+.titulo_texto_1{
+    margin-top: -305px;
+    margin-left: 23px;
+}
+.titulo_texto_2{
+    margin-left: 57px;
+}
+.titulo_texto_3{
+    margin-left: 10px;
+}
+.titulo_texto_4{
+    margin-left: 46px;
+}
+.titulo_texto_5{
+    margin-left: 46px;
+}
+.titulo_texto_6{
+    margin-left: 46px;
+}
+.titulo_texto_7{
+    margin-left: 46px;
+}
+.guardar{
+    font-size: 20px;
+    margin-left: 160px;
+}
