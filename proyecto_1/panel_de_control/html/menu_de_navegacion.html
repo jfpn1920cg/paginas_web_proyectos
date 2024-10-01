@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>panel de control</title>
     <link rel="stylesheet" href="/css/menu_de_navegacion.css">
-    <script src="/js/menu_de_navegacion.css"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <script src="/js/menu_de_navegacion.js" defer></script>
 </head>
 <body>
     <!--estructurando_menu_de_navegacion-->
@@ -47,33 +48,49 @@
     <div class="contenedor_titulo_2">
         <p class="titulo_2">menu de navegacion editor</p>
     </div>
-    <div class="contenedor_titulo">
-        <p class="titulo_texto_1">titular menu: <input type="text" class="titulo_texto"></p>
-        <p class="titulo_texto_2">imagen: <input type="file" name="" id="" class="titulo_texto"></p>
-        <p class="titulo_texto_3">nombrar logo: <input type="text" class="titulo_texto"></p>
-        <p class="titulo_texto_4">opcion 1: <input type="text" class="opcion_texto"></p>
-        <p class="titulo_texto_5">opcion 2: <input type="text" class="opcion_texto"></p>
-        <p class="titulo_texto_6">opcion 3: <input type="text" class="opcion_texto"></p>
-        <p class="titulo_texto_7">opcion 4: <input type="text" class="opcion_texto"></p>
-        <button class="guardar">guardar</button>
-    </div>
-    <!--estructurando_menu_de_navegacion_guardados-->
-    <div class="contenedor_2">
-        <p class="titulo_3">menu de navegacion guardados</p>
-        <div class="contenedor_menu_guardados"></div>
-    </div>
-    <!--estructurando_tablero-->
-    <table class="contenedor_tabla">
-        <thead>
-            <tr>
-                <th>menu de navegacion</th>
-                <th>pagina web</th>
-                <th>opcion 1</th>
-                <th>opcion 2</th>
-                <th>opcion 3</th>
-                <th>opcion 4</th>
-            </tr>
-        </thead>
-    </table>
+    <form id="menuForm" class="contenedor_titulo">
+        <p class="titulo_texto_1">Titular menú: <input type="text" id="titular_menu" class="titulo_texto"></p>
+        <p class="titulo_texto_2">Imagen: <input type="file" id="imagen_logo" class="titulo_texto" accept="image/*"></p>
+        <p class="titulo_texto_3">Nombrar logo: <input type="text" id="nombre_logo" class="titulo_texto"></p>
+        <p class="titulo_texto_4">Opción 1: <input type="text" id="opcion1" class="opcion_texto">
+            <select class="icon-select" id="iconSelect1">
+                <option value="fa-home">&#xf015;</option>
+                <option value="fa-user">&#xf007;</option>
+                <option value="fa-envelope">&#xf0e0;</option>
+                <option value="fa-heart">&#xf004;</option>
+                <option value="fa-cog">&#xf013;</option>
+            </select>
+        </p>
+        <p class="titulo_texto_5">Opción 2: <input type="text" id="opcion2" class="opcion_texto">
+            <select class="icon-select" id="iconSelect2">
+                <option value="fa-home">&#xf015;</option>
+                <option value="fa-user">&#xf007;</option>
+                <option value="fa-envelope">&#xf0e0;</option>
+                <option value="fa-heart">&#xf004;</option>
+                <option value="fa-cog">&#xf013;</option>
+            </select>
+        </p>
+        <p class="titulo_texto_6">Opción 3: <input type="text" id="opcion3" class="opcion_texto">
+            <select class="icon-select" id="iconSelect3">
+                <option value="fa-home">&#xf015;</option>
+                <option value="fa-user">&#xf007;</option>
+                <option value="fa-envelope">&#xf0e0;</option>
+                <option value="fa-heart">&#xf004;</option>
+                <option value="fa-cog">&#xf013;</option>
+            </select>
+        </p>
+        <p class="titulo_texto_7">Opción 4: <input type="text" id="opcion4" class="opcion_texto">
+            <select class="icon-select" id="iconSelect4">
+                <option value="fa-home">&#xf015;</option>
+                <option value="fa-user">&#xf007;</option>
+                <option value="fa-envelope">&#xf0e0;</option>
+                <option value="fa-heart">&#xf004;</option>
+                <option value="fa-cog">&#xf013;</option>
+            </select>
+        </p>
+        <p class="titulo_texto_53">Estilo CSS: <input type="checkbox" id="estilo_css" class="titulo_texto"></p>
+        <p class="titulo_texto_54">Menú responsivo: <input type="checkbox" id="menu_responsivo" class="titulo_texto"></p>
+        <button type="button" onclick="guardarDatos()" class="guardar">Guardar</button>
+    </form>
 </body>
 </html>

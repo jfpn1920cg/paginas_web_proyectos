@@ -161,37 +161,37 @@ body{
     color: rgb(255, 255, 255);
 }
 /*estilizando_aliados_editor*/
-.contenedor_4{
+.contenedor_5{
     display: flex;      
     margin-top: -545px;
     margin-left: 205px;
-    width: 488px;
+    width: 465px;
     height: 230px;
     border-radius: 0px 0px 5px 0px;
     background: rgb(139, 33, 33);                   
 }
-.titulo_5{
+.titulo_6{
     margin-top: 15px;
     margin-left: 185px;
     display: block;
 }
-.contenedor_titulo_4{
+.contenedor_titulo_5{
     margin-top: -157px;
     margin-left: 205px;
     width: 500px;
 }
-.titulo_texto_12{
+.titulo_texto_16{
     margin-top: -190px;
     margin-left: 20px;
 }
-.titulo_texto_13{
-    margin-left: 108px;
+.titulo_texto_17{
+    margin-left: 85px;
 }
-.titulo_texto_14{
-    margin-left: 39px;
+.titulo_texto_18{
+    margin-left: 100px;
 }
-.titulo_texto_15{
-    margin-left: 112px;
+.titulo_texto_19{
+    margin-left: 93px;
 }
 .guardar{
     font-size: 20px;

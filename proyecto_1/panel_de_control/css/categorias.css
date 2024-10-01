@@ -160,55 +160,8 @@ body{
 .seleccionar_opcion:hover{
     color: rgb(255, 255, 255);
 }
-/*estilizando_aliados_editor*/
-.contenedor_4{
-    display: flex;      
+/*estilizando_categorias*/
+.categorias_creados{
     margin-top: -545px;
-    margin-left: 205px;
-    width: 488px;
-    height: 230px;
-    border-radius: 0px 0px 5px 0px;
-    background: rgb(139, 33, 33);                   
-}
-.titulo_5{
-    margin-top: 15px;
-    margin-left: 185px;
-    display: block;
-}
-.contenedor_titulo_4{
-    margin-top: -157px;
-    margin-left: 205px;
-    width: 500px;
-}
-.titulo_texto_12{
-    margin-top: -190px;
-    margin-left: 20px;
-}
-.titulo_texto_13{
-    margin-left: 108px;
-}
-.titulo_texto_14{
-    margin-left: 39px;
-}
-.titulo_texto_15{
-    margin-left: 112px;
-}
-.guardar{
-    font-size: 20px;
-    margin-left: 170px;
-}
-/*estilizando_tablero*/
-table {
-    width: 650px;
-    height: 50px;
-    margin-top: -222px;
-    margin-left: 700px;
-    border-radius: 0px 0px 5px 0px;
-    background-color: #000000;
-}
-
-thead {
-    border-radius: 0px 0px 5px 0px;
-    background-color: rgb(139, 33, 33);
-    color: rgb(0, 0, 0);
+    margin-left: 210px;
 }

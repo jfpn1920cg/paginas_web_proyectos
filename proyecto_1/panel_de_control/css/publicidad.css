@@ -161,47 +161,50 @@ body{
     color: rgb(255, 255, 255);
 }
 /*estilizando_aliados_editor*/
-.contenedor_4{
+.contenedor_9{
     display: flex;      
     margin-top: -545px;
     margin-left: 205px;
-    width: 488px;
-    height: 230px;
+    width: 430px;
+    height: 265px;
     border-radius: 0px 0px 5px 0px;
     background: rgb(139, 33, 33);                   
 }
-.titulo_5{
+.titulo_10{
     margin-top: 15px;
-    margin-left: 185px;
+    margin-left: 138px;
     display: block;
 }
-.contenedor_titulo_4{
+.contenedor_titulo_9{
     margin-top: -157px;
     margin-left: 205px;
     width: 500px;
 }
-.titulo_texto_12{
-    margin-top: -190px;
-    margin-left: 20px;
+.titulo_texto_35{
+    margin-top: -225px;
+    margin-left: 70px;
 }
-.titulo_texto_13{
-    margin-left: 108px;
+.titulo_texto_36{
+    margin-left: 41px;
 }
-.titulo_texto_14{
-    margin-left: 39px;
+.titulo_texto_37{
+    margin-left: 52px;
 }
-.titulo_texto_15{
-    margin-left: 112px;
+.titulo_texto_38{
+    margin-left: 19px;
+}
+.titulo_texto_39{
+    margin-left: 58px;
 }
 .guardar{
     font-size: 20px;
-    margin-left: 170px;
+    margin-left: 155px;
 }
 /*estilizando_tablero*/
 table {
     width: 650px;
     height: 50px;
-    margin-top: -222px;
+    margin-top: -259px;
     margin-left: 700px;
     border-radius: 0px 0px 5px 0px;
     background-color: #000000;

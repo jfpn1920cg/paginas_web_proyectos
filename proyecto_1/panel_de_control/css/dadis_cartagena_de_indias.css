@@ -1,0 +1,52 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    position: relative; /* Permite el uso de posición absoluta para la imagen */
+    height: 200px; /* Altura del encabezado */
+    color: white;
+    text-align: center;
+    overflow: hidden; /* Oculta cualquier contenido que sobresalga */
+}
+header img {
+    position: absolute; /* Posiciona la imagen como fondo */
+    top: 0;
+    left: 0;
+    width: 100%; /* Ajusta el ancho al 100% */
+    height: 100%; /* Ajusta la altura al 100% */
+    object-fit: cover; /* Mantiene la proporción de la imagen */
+    z-index: -1; /* Coloca la imagen detrás del contenido */
+}
+h1 {
+    position: relative; /* Permite que el texto esté por encima de la imagen */
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+    padding: 20px; /* Espaciado interno */
+    margin: 0; /* Elimina el margen del título */
+}
+nav {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    overflow: hidden;
+    display: flex;
+    justify-content: center; /* Centra el menú */
+}
+nav a {
+    display: flex; /* Usa flexbox para alinear icono y texto */
+    align-items: center; /* Alinea verticalmente */
+    color: white;
+    text-align: center;
+    padding: 14px 20px; /* Añade espacio alrededor del enlace */
+    text-decoration: none;
+    transition: background-color 0.3s; /* Transición suave */
+}
+nav a:hover {
+    background-color: #575757; /* Color de fondo al pasar el ratón */
+}
+nav i {
+    margin-right: 8px; /* Espacio entre el icono y el texto */
+}
+.menu-container {
+    padding: 20px; /* Añade espacio alrededor del menú */
+}
