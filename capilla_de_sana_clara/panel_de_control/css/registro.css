@@ -1,0 +1,77 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('/img/imagen_1.jpg'); /* Imagen de fondo */
+    background-size: cover; /* Hacemos que la imagen cubra todo el fondo */
+    background-position: center; /* Centramos la imagen */
+    background-repeat: no-repeat; /* Evitamos que la imagen se repita */
+    background-attachment: fixed; /* Fijamos la imagen de fondo */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Aseguramos que el formulario esté centrado verticalmente */
+    padding: 20px; /* Añadimos espacio interno en caso de pantallas pequeñas */
+}
+
+.register-container {
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo blanco semi-transparente */
+    padding: 30px 20px; /* Aumentamos el padding para hacer que el contenido respire */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px; /* Establecemos un ancho máximo para que se ajuste bien */
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 26px; /* Hacemos el título más grande para mayor visibilidad */
+    color: #333;
+}
+
+label {
+    display: block;
+    text-align: left;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: #555;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; /* Aumentamos un poco el tamaño de la fuente para mayor legibilidad */
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Estilo para los mensajes de error */
+.error {
+    color: red;
+    font-size: 0.9em;
+    margin-top: 5px;
+}
